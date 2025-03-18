@@ -14,7 +14,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@monorepo/core-ui": ["libs/core-ui/src/index.ts"],
+      "@monorepo/core-ui/server": ["libs/core-ui/src/server.ts"],
+      "@monorepos/utils": ["libs/utils/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
