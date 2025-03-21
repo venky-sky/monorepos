@@ -1,11 +1,11 @@
 import {render, screen} from '@testing-library/react';
 
-import {<%= name%>} from './<%= name%>'
+import {<%= _.capitalize(name)%>} from './<%= name%>'
 
-describe('<%= name%>', () => {
+describe('<%= _.capitalize(name)%>', () => {
   it('should render message', () => {
-    render(<<%= name%> />);
+    render(<<%= _.capitalize(name)%> />);
     const messageElement = screen.getByText("<%= name%>");
-    expect(messageElement).toBeInTheDocument();
+    expect(messageElement).not.toBeNull();
   })
 })

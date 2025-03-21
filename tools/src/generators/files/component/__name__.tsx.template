@@ -1,9 +1,9 @@
 
-export type <%= name%>Props = {
-  message: string
+export type <%= _.capitalize(name)%>Props = {
+
 }
 
-export const Template = ({message}: <%= name%>Props) => {
+export const <%= _.capitalize(name)%> = (props: <%= _.capitalize(name)%>Props) => {
   return (
     <div>
       <%= name%>
