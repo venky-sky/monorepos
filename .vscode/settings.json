@@ -1,4 +1,7 @@
 {
-  "cSpell.words": ["vercel"],
+  "cSpell.words": [
+    "codegen",
+    "vercel"
+  ],
   "eslint.validate": ["json"]
 }
