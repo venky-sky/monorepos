@@ -1,0 +1,12 @@
+
+export type <%= name%>Props = {
+  message: string
+}
+
+export const Template = ({message}: <%= name%>Props) => {
+  return (
+    <div>
+      <%= name%>
+    </div>
+  )
+}

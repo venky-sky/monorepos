@@ -28,6 +28,7 @@
     "@nx/next": "20.6.0",
     "@nx/node": "20.6.0",
     "@nx/playwright": "20.6.0",
+    "@nx/plugin": "20.6.0",
     "@nx/react": "20.6.0",
     "@nx/storybook": "20.6.0",
     "@nx/vite": "20.6.0",

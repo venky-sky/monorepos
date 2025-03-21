@@ -17,6 +17,7 @@
     "paths": {
       "@monorepo/core-ui": ["libs/core-ui/src/index.ts"],
       "@monorepo/core-ui/server": ["libs/core-ui/src/server.ts"],
+      "@monorepos/tools": ["tools/src/index.ts"],
       "@monorepos/utils": ["libs/utils/src/index.ts"]
     }
   },

@@ -1,0 +1,11 @@
+import {render, screen} from '@testing-library/react';
+
+import {<%= name%>} from './<%= name%>'
+
+describe('<%= name%>', () => {
+  it('should render message', () => {
+    render(<<%= name%> />);
+    const messageElement = screen.getByText("<%= name%>");
+    expect(messageElement).toBeInTheDocument();
+  })
+})
