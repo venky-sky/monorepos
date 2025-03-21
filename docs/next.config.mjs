@@ -1,7 +1,8 @@
 //@ts-check
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
-const { composePlugins, withNx } = require('@nx/next');
+import { composePlugins, withNx } from'@nx/next';
+import nextra from "nextra";
 
 /**
  * @type {import('@nx/next/plugins/with-nx').WithNxOptions}
@@ -12,16 +13,16 @@ const nextConfig = {
     // See: https://github.com/gregberge/svgr
     svgr: false,
   },
-
-  compiler: {
-    // For other options, see https://nextjs.org/docs/architecture/nextjs-compiler#emotion
-    emotion: true,
-  },
 };
+
+const withNextra = nextra({
+  // ... Other Nextra config options
+})
 
 const plugins = [
   // Add more Next.js plugins to this list if needed.
   withNx,
+  withNextra,
 ];
 
-module.exports = composePlugins(...plugins)(nextConfig);
+export default composePlugins(...plugins)(nextConfig);
